@@ -73,7 +73,7 @@ Emacs設定例（use-packageとパッケージ取得設定が利用可能な場�
 
 数式の.qmd記述例:
 $$
-\\partial_\\mu T^{\\mu\\nu} = 0.
+\partial_\mu T^{\mu\nu} = 0.
 $$
 
 現行_quarto.yml（参照用。置き換えは不要）:
