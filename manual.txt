@@ -1,0 +1,362 @@
+【2026-10-16 リポジトリ照合・訂正】
+Desktopの原本を以下に保存し、この訂正を冒頭に追加した。
+原本には文章化に伴うコマンドの改行・引用符・ハイフンの崩れがある。
+実行する場合は以下の整形済み例を使い、原本のコマンドをそのまま貼り付けない。
+
+確認済み:
+- mainにmanual.txtは存在しなかった。
+- _quarto.ymlのproject.typeはwebsite、output-dirはdocs。
+- タイトルはShin-ei Fujii、ナビゲーションはindex.qmdとabout.qmd。
+- HTMLテーマはcosmoとbrandの両方。styles.cssとtoc: trueを使用。
+- docs/と_site/は現在どちらもGit管理されている。
+- docs/.nojekyllは現在存在しない。原本の記述は追加手順であり導入済みではない。
+- Pages管理画面のmain /docs設定、各Macのインストール・認証状態は今回未検証。
+- 今回はmanual.txtだけを追加し、設定・生成HTML・.gitignoreは変更しない。
+
+確認:
+git --version
+quarto --version
+emacs --version
+brew --version
+
+Homebrew導入済みの場合のQuartoインストール:
+brew install --cask quarto
+
+/Applications/quarto/bin/quartoが実在し、PATH未設定の場合だけ:
+echo 'export PATH="/Applications/quarto/bin:$PATH"' >> ~/.zshrc
+source ~/.zshrc
+quarto --version
+
+既存サイトを新しいMacに取得（同名フォルダがまだない場合）:
+cd ~
+git clone https://github.com/ShineiFujii/ShineiFujii.github.io.git
+cd ~/ShineiFujii.github.io
+
+編集・確認・公開:
+cd ~/ShineiFujii.github.io
+git status
+git pull --ff-only origin main
+emacs index.qmd
+
+VS Codeを使う場合:
+open -a "Visual Studio Code" .
+
+プレビュー（終了はCtrl+C）:
+quarto preview
+
+公開用HTMLを生成:
+quarto render
+git status
+git diff
+
+以下は変更したソースと生成結果を確認してから実行する。
+git add .
+git diff --cached
+git commit -m "Update website"
+git push origin main
+
+Keychain設定:
+git config --global credential.helper osxkeychain
+
+Gitの著者設定（メールは自分の登録済み/noreplyアドレスに置換）:
+git config --global user.name "Shin-ei Fujii"
+git config --global user.email "YOUR_VERIFIED_OR_NOREPLY_EMAIL"
+
+履歴確認:
+git log --oneline -5
+
+Emacs設定例（use-packageとパッケージ取得設定が利用可能な場合）:
+(use-package markdown-mode
+  :ensure t
+  :mode (("\\.md\\'" . markdown-mode)
+         ("\\.qmd\\'" . markdown-mode)))
+
+数式の.qmd記述例:
+$$
+\\partial_\\mu T^{\\mu\\nu} = 0.
+$$
+
+現行_quarto.yml（参照用。置き換えは不要）:
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Shin-ei Fujii"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+    css: styles.css
+    toc: true
+
+
+
+
+【以下、Desktopの原本】
+
+Shin-ei Fujii 研究者ホームページ 運用マニュアル
+
+対象: https://shineifujii.github.io/ GitHub:
+https://github.com/ShineiFujii/ShineiFujii.github.io 構成: Quarto +
+GitHub Pages + Git 作成日: 2026-10-16
+
+【0. このマニュアルについて】
+これまでのセットアップ会話に基づく手順書です。
+このファイルは会話から作成したもので、リポジトリの実ファイルを
+直接読み取って検証したものではありません。公開設定やディレクトリは
+GitHub上でも確認してください。
+認証トークンやパスワードを、このファイルやGitHubに保存しないこと。
+
+【1. 全体像】 文章と数式を .qmd (Quarto Markdown) で記述する。
+QuartoがHTMLを生成し、GitHub PagesがHTMLを公開する。
+編集ソフトは任意。Mac 1ではVS Code、Mac 2ではEmacsを利用可能。
+GitHubを介して2台のMac間で変更を同期する。
+
+    .qmdを編集 → quarto previewで確認
+    → quarto render → git add → git commit → git push
+    → GitHub Pagesで公開
+
+【2. インストールするもの】 必須: Git : バージョン管理、GitHubとの同期
+Quarto : .qmdからHTMLを生成 任意: VS Code : GUIエディタ（1台目で使用）
+Emacs : テキストエディタ（2台目で使用） Homebrew :
+Mac用パッケージ管理（導入済みなら使用可）
+
+確認: git –version quarto –version emacs –version brew –version
+
+公式サイト: https://git-scm.com/ https://quarto.org/docs/get-started/
+https://code.visualstudio.com/ https://www.gnu.org/software/emacs/
+https://brew.sh/
+
+QuartoをHomebrewでインストール: brew install –cask quarto
+
+注意: brew install quarto ではformulaが見つからず、 brew install –cask
+quarto を案内された事例があった。
+
+2台目のMacでは「インストール成功」と表示されても quarto: command not
+found になった。 次で実行ファイルが見つかった:
+/Applications/quarto/bin/quarto
+
+PATHを設定（zshの場合）: echo ‘export
+PATH=“/Applications/quarto/bin:$PATH”’ >> ~/.zshrc source ~/.zshrc
+quarto –version
+
+※ PATH設定は一度だけ追加する。既に設定済みなら重複追加不要。 ※
+MacによってQuartoのインストール先は異なる。 find /Applications
+/usr/local /opt -name quarto 2>/dev/null
+で確認し、実際の実行ファイルがあるディレクトリをPATHに加える。
+
+VS Codeでフォルダを開く: cd ~/ShineiFujii.github.io open -a “Visual
+Studio Code” .
+
+code . が動かない場合も上記のopenコマンドで開ける。 VS
+Codeのコマンドパレットから Shell Command: Install ‘code’ command in PATH
+を実行すると、code . を使えるようにできる。
+
+Emacs: cd ~/ShineiFujii.github.io emacs index.qmd 保存: C-x C-s
+.qmdはMarkdownベースなのでEmacsでも問題なく編集できる。
+markdown-modeを導入すれば編集が便利。 例（use-packageが利用可能な場合）:
+(use-package markdown-mode :ensure t :mode (“\.md\’” “\.qmd\’”))
+
+【3. リポジトリの取得と初期化】
+初回は以下のようにQuartoサイトを作成した: mkdir -p
+~/ShineiFujii.github.io cd ~/ShineiFujii.github.io quarto create project
+website quarto preview
+
+※ 既存のサイトがGitHubにある場合、再度createしない。
+2台目以降のMacではcloneする: cd ~ git clone
+https://github.com/ShineiFujii/ShineiFujii.github.io.git cd
+~/ShineiFujii.github.io git pull origin main quarto preview
+
+【4. 主なファイルとフォルダ】 ShineiFujii.github.io/ _quarto.yml
+Quartoのサイト設定、出力先、ナビゲーション index.qmd
+ホーム（トップページ） about.qmd 自己紹介 styles.css CSSによる外観の調整
+README.md GitHub上の説明（存在する場合） .gitignore
+Gitで管理しないファイルを指定 docs/ GitHub Pages公開用の生成HTML
+index.html 生成されたトップページ about.html 生成された自己紹介ページ
+site_libs/ HTML表示に必要なCSS/JSなど .nojekyll
+Jekyll処理を無効化する空ファイル _site/
+Quartoの旧出力先。現在docs運用なら原則不要 .quarto/
+Quartoの一時・キャッシュ関連ファイル manual.txt 本マニュアル（今回作成）
+publications.qmd 論文ページ（追加した場合） research.qmd
+研究紹介ページ（追加した場合）
+
+注意: docs/内の生成HTMLは通常手編集しない。 元の .qmd / _quarto.yml /
+styles.css を編集してrenderする。 GitHub Pagesを main /docs
+で公開する運用では、 docs/をGitに含める必要がある。
+.gitignoreでdocs/を除外しないこと。
+.quarto/は通常Git管理不要。_site/もdocs運用では通常除外する。
+過去のコミットには_site/が含まれていた。
+
+【5. _quarto.yml の基本設定例】 project: type: website output-dir: docs
+
+website: title: “Shin-ei Fujii” navbar: left: - href: index.qmd text:
+Home - href: about.qmd text: About
+
+format: html: theme: cosmo css: styles.css toc: true
+
+これは設定例。既存の設定を丸ごと置き換える前に差分を確認する。
+新ページを追加したらnavbarにも項目を追加する。 例: - href:
+publications.qmd text: Publications
+
+【6. ページ編集】 トップページ: emacs index.qmd またはVS
+Codeでindex.qmdを開く。
+.qmdではMarkdown見出し、リンク、画像、LaTeX数式が使える。
+
+例: ## Research My research focuses on relativistic heavy-ion
+collisions.
+
+∂_(μ)T^(μν) = 0.
+
+編集後: quarto preview
+ブラウザのlocalhostに表示され、保存すると自動更新される。
+プレビュー終了: Ctrl+C 404 apple-touch-icon.png
+のようなfavicon関連ログは、 ページ表示が正常なら重大な問題とは限らない。
+
+【7. 公開設定（GitHub Pages）】 リポジトリの設定画面:
+https://github.com/ShineiFujii/ShineiFujii.github.io/settings/pages
+
+注意: github.com/settings/pages は「アカウント全体の設定」で、
+リポジトリのPages設定ではない。
+
+Settings → Pages → Build and deployment: Source : Deploy from a branch
+Branch : main Folder : /docs Save
+
+_quarto.ymlに output-dir: docs を指定し、 quarto render
+を実行してdocs/に生成されたHTMLをコミットする。
+Jekyllによる不要な変換を防ぐため: touch docs/.nojekyll
+を実行して、docs/.nojekyllをGitで管理する。
+
+公開URL: https://shineifujii.github.io/
+
+公開状況: https://github.com/ShineiFujii/ShineiFujii.github.io/actions
+
+GitHubへのpush成功とPages公開成功は別。
+Actionsでbuild/deployが成功したか確認する。
+
+【8. 毎回の編集・公開（最重要）】 作業開始前（必ず）: cd
+~/ShineiFujii.github.io git status git pull origin main
+
+EmacsまたはVS Codeで .qmd などを編集。 プレビュー: quarto preview
+確認後Ctrl+Cで終了（別ターミナルなら並行実行可）。
+
+公開用HTMLを生成: quarto render
+
+変更内容を確認: git status git diff
+
+変更をGitに保存して送信: git add . git commit -m “Update website” git
+push origin main
+
+※ git add . は意図しないファイルも追加し得る。 git
+statusを確認してから使う。 ※ “nothing to commit, working tree clean” は
+コミットすべき変更がないことを意味する。エラーではない。 ※ git push
+が認証を求める場合は第9章を参照。 ※ GitHub
+Pagesの反映には数分かかることがある。
+
+【9. GitHub認証（CLIなしでpush）】 GitHub CLI (gh) は必須ではない。
+HTTPSのgit pushには、通常のGitHubログインパスワードではなく Personal
+Access Token (PAT) を使える。
+
+Fine-grained token作成:
+https://github.com/settings/personal-access-tokens/new
+
+推奨設定: Resource owner : ShineiFujii Repository access : Only select
+repositories Repository : ShineiFujii.github.io Repository permissions →
+Contents : Read and write Expiration : 90 daysなど適切な有効期限
+
+PermissionsでAdd permissionsを押し、 検索欄にContentsと入力して選ぶ。
+「Repo」で検索するとContentsが出ない場合がある。
+
+トークンは生成時にしか全文表示されない。
+パスワードと同様に秘密として扱い、Gitにコミットしない。
+紛失時は新規作成を推奨。Regenerateすると旧Tokenは失効する。
+
+macOS Keychainへの保存設定（認証前に実施推奨）: git config –global
+credential.helper osxkeychain
+
+push時: git push origin main Username: ShineiFujii Password:
+発行したPATを貼り付ける
+
+パスワード入力中は文字が表示されなくても正常。
+1台目のMacではPATでpushに成功した。
+2台目のMacでも個別のPATを使うと管理しやすい。
+Tokenが期限切れなら新しいTokenで再認証する。
+古い認証情報がKeychainに残っている場合は、
+macOSの「キーチェーンアクセス」でgithub.comの該当情報を確認。
+
+【10. 2台のMacでの運用】 Mac A: VS Code + Quarto + Git Mac B: Emacs +
+Quarto + Git 編集ソフトが異なっても同じ.qmdを編集できる。
+
+ルール: Aで編集→commit/push Bで編集前にpull→編集→commit/push
+Aで次回編集前にpull
+
+同じファイルを両方のMacで未同期のまま編集すると Gitの競合（merge
+conflict）が起きる可能性がある。 まずgit
+statusで未コミット変更がないか確認する。
+未コミットの変更があるとpullできない場合があるので、
+必要に応じてコミットまたはstashしてから同期する。
+
+【11. 実際に起きた問題と対処】 (1) quarto: command not found
+Quartoはインストール成功でもPATHにない場合があった。 2台目では
+/Applications/quarto/bin/quarto が存在。 ~/.zshrc
+にPATHを追加しsourceして解決を目指した。
+
+(2) brew install quarto が失敗 formulaではなくcask: brew install –cask
+    quarto
+
+(3) code . が使えない open -a “Visual Studio Code” . で開くか、VS
+    CodeのShell Command設定を行う。
+
+(4) GitHub PagesのbuildがFailure Actionsのbuildログを確認。
+    会話ではJekyllが起動していたため、 docs出力、docs/.nojekyll、Pages
+    main/docs を設定。 原因の確定には実際のActionsエラーログが必要。
+
+(5) GitHub認証エラー Password authentication is not supported →
+    通常パスワードではなくPATを使う。
+
+(6) GitHub CLIのHomebrewインストール失敗 古いIntel macOS環境でCommand
+    Line Toolsが非対応と表示。 ghは必須ではないため、PAT方式で解決した。
+    CLTを削除・再インストールする前に必要性を確認する。
+
+(7) git commit時のユーザー名・メール警告
+    GitがMacのホスト名から自動設定したことがあった。 明示設定するなら:
+    git config –global user.name “Shin-ei Fujii” git config –global
+    user.email “GitHubに登録したメールまたはnoreplyアドレス”
+    公開コミットに個人メールを載せたくない場合は、
+    GitHubのnoreplyアドレスを使用する。
+    既存コミットの著者情報はこの設定だけでは変わらない。
+
+(8) pushしたのにページが変わらない quarto
+    renderの実行、docs/のコミット、 Pages
+    main/docs設定、Actionsの結果、ブラウザキャッシュを確認。
+
+【12. Gitコマンド早見表】 git status 変更状況 git pull origin main
+GitHubの最新変更を取得 git diff 未ステージ変更を確認 git add .
+変更をステージ git commit -m “…” ローカルに履歴を保存 git push origin
+main GitHubへ送信 git log –oneline -5 最近のコミット git remote -v
+接続先を確認
+
+【13. 将来の改善案】 - Research / Publications / Presentations /
+CVページを追加 - INSPIRE-HEP、Google
+Scholar、ORCID等の本人ページへリンク -
+研究紹介図、論文、講演資料を掲載 -
+画像は適切に圧縮し、著作権・公開許諾を確認 -
+更新コマンドをシェルスクリプト化することも可能 -
+複数Mac間で変更を同期する運用を維持
+
+【14. 最短チェックリスト】 初回（新しいMac）: 1. Git / Quarto /
+エディタをインストール 2. git cloneでリポジトリ取得 3. quarto –version
+と quarto preview を確認 4. PAT認証とKeychainを設定
+
+普段: 1. git pull origin main 2. .qmdを編集・保存 3. quarto preview 4.
+quarto render 5. git status 6. git add . && git commit -m “Update
+website” 7. git push origin main 8. GitHub Actionsと公開URLを確認
+
+以上。
