@@ -1,1 +1,17 @@
-/* css styles */
+/* Academic profile and responsive page layout. */
+:root { --profile-accent: #234f68; }
+.navbar { border-bottom: 1px solid #dce5eb; }
+h1, h2, h3 { color: var(--profile-accent); }
+h2 { margin-top: 2rem; }
+.profile { display: grid; grid-template-columns: minmax(180px, 270px) 1fr; gap: 2.5rem; align-items: center; margin: 1.5rem 0 3rem; }
+.profile > p { margin: 0; }
+.profile-photo { width: 100%; height: auto; border-radius: 12px; }
+.profile-intro h2 { margin-top: 0; border: 0; }
+.profile-intro .btn { margin: .3rem .35rem .3rem 0; }
+#quarto-document-content { line-height: 1.7; }
+#quarto-document-content ol > li { margin-bottom: 1rem; }
+@media (max-width: 650px) {
+  .profile { grid-template-columns: 1fr; gap: 1.25rem; }
+  .profile-photo { max-width: 260px; }
+  table { font-size: .9rem; }
+}

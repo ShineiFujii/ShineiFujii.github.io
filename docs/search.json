@@ -1,44 +1,142 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "presentations.html",
+    "href": "presentations.html",
+    "title": "Presentations",
     "section": "",
-    "text": "About this site"
+    "text": "Rapidity scan of conserved charges in a dynamical soft–hard correlated approach\nC3NT workshop: Jet–soft dynamical medium interaction in high-energy heavy-ion collisions. Wuhan, China. April 2, 2026.\nHydro and dynamical model\npostQM 2025. Nagoya, Japan. May 1, 2025.\nRapidity scan in high-energy heavy-ion collisions\nGo-Forward workshop 2025. Nagasaki, Japan. February 28, 2025.\nDynamics of causal hydrodynamic fluctuations in an expanding system\nThe 40th Heavy Ion Cafe. Hongo, The University of Tokyo, Japan. September 22, 2023.\nDynamics of causal hydrodynamic fluctuations in an expanding system\nQuark Matter 2023 (flash talk). Houston, Texas, USA. September 9, 2023."
+  },
+  {
+    "objectID": "presentations.html#invited-talks",
+    "href": "presentations.html#invited-talks",
+    "title": "Presentations",
+    "section": "",
+    "text": "Rapidity scan of conserved charges in a dynamical soft–hard correlated approach\nC3NT workshop: Jet–soft dynamical medium interaction in high-energy heavy-ion collisions. Wuhan, China. April 2, 2026.\nHydro and dynamical model\npostQM 2025. Nagoya, Japan. May 1, 2025.\nRapidity scan in high-energy heavy-ion collisions\nGo-Forward workshop 2025. Nagasaki, Japan. February 28, 2025.\nDynamics of causal hydrodynamic fluctuations in an expanding system\nThe 40th Heavy Ion Cafe. Hongo, The University of Tokyo, Japan. September 22, 2023.\nDynamics of causal hydrodynamic fluctuations in an expanding system\nQuark Matter 2023 (flash talk). Houston, Texas, USA. September 9, 2023."
+  },
+  {
+    "objectID": "presentations.html#contributed-talks",
+    "href": "presentations.html#contributed-talks",
+    "title": "Presentations",
+    "section": "Contributed Talks",
+    "text": "Contributed Talks\n\nLongitudinal dynamics from core–corona picture in high-energy heavy-ion collisions\nThe Physical Society of Japan 2026 Spring Meeting. Online, Japan. March 23, 2026.\nDescription of equilibration in the forward rapidity region in high-energy heavy-ion collisions from core-corona picture\nThe Physical Society of Japan, 80th Annual Meeting. Hiroshima, Japan. September 18, 2025.\nRapidity scan in high-energy heavy-ion collisions\nThe Physical Society of Japan 2025 Spring Meeting. Online, Japan. March 18, 2025.\nRapidity scan with DCCI at LHC energy\nATHIC 2025. Berhampur, Odisha, India. January 15, 2025.\nCausal hydrodynamic fluctuations in a one-dimensional expanding system\nHydrodynamics and related observables in heavy-ion collisions. Subatech/IMT-Atlantique, Nantes, France. October 29, 2024.\nEffects of hydrodynamic fluctuations on 2-particle correlations in an expanding system\nThe Physical Society of Japan 2024 Spring Meeting. Online, Japan. March 19, 2024.\nDynamics of causal hydrodynamic fluctuations in an expanding system\nJ-PARC Hadron Workshop 2023. Online, Japan. March 27, 2023.\nDynamics of hydrodynamic fluctuations in an expanding system\nThe Physical Society of Japan 2023 Spring Meeting. Online, Japan. March 25, 2023.\nCausal hydrodynamic fluctuations in (1+1)-dimensional expanding system\nThe Physical Society of Japan, 77th Annual Meeting. Online, Japan. March 15, 2022."
+  },
+  {
+    "objectID": "presentations.html#poster-presentations",
+    "href": "presentations.html#poster-presentations",
+    "title": "Presentations",
+    "section": "Poster Presentations",
+    "text": "Poster Presentations\n\nRapidity scan with DCCI at LHC energy\nQuark Matter 2025. Frankfurt, Hesse, Germany. April 8, 2025.\nEffects of hydrodynamic fluctuations on 2-particle correlations in an expanding system\nTutorial workshop for physics of high energy heavy ion collisions. Toyonaka, Osaka University, Japan. August 6, 2024.\nDynamics of causal hydrodynamic fluctuations in an expanding system\nQuark Matter 2023. Houston, Texas, USA. September 5, 2023.\nDynamics of causal hydrodynamic fluctuations in an expanding system\nATHIC 2023. Hiroshima, Japan. April 25, 2023."
+  },
+  {
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "Publications",
+    "section": "",
+    "text": "Shin-ei Fujii and Tetsufumi Hirano. “Causal hydrodynamic fluctuations in a one-dimensional expanding system.” Physical Review C 109, 024916 (2024). DOI: 10.1103/PhysRevC.109.024916."
+  },
+  {
+    "objectID": "publications.html#refereed-journal-articles",
+    "href": "publications.html#refereed-journal-articles",
+    "title": "Publications",
+    "section": "",
+    "text": "Shin-ei Fujii and Tetsufumi Hirano. “Causal hydrodynamic fluctuations in a one-dimensional expanding system.” Physical Review C 109, 024916 (2024). DOI: 10.1103/PhysRevC.109.024916."
+  },
+  {
+    "objectID": "publications.html#conference-proceedings",
+    "href": "publications.html#conference-proceedings",
+    "title": "Publications",
+    "section": "Conference Proceedings",
+    "text": "Conference Proceedings\n\nShin-ei Fujii, Yasuki Tachibana, and Tetsufumi Hirano. “Rapidity scan with DCCI at LHC energy.” Journal of Subatomic Particles and Cosmology 5, 100289 (2026). DOI: 10.1016/j.jspc.2026.100289.\nShin-ei Fujii and Tetsufumi Hirano. “Dynamics of causal hydrodynamic fluctuations in an expanding system.” EPJ Web of Conferences 296, 02005 (2024). DOI: 10.1051/epjconf/202429602005.\n\nFor my publication profile, see INSPIRE-HEP."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Shin-ei Fujii",
     "section": "",
-    "text": "I am a postdoctoral researcher at Zhejiang University, working in theoretical nuclear physics.\nMy research focuses on understanding the properties of strongly interacting matter created in relativistic heavy-ion collisions."
+    "text": "I am a postdoctoral fellow at the Zhejiang Institute of Modern Physics, Department of Physics, Zhejiang University, China.\nPublications Presentations Career & Education"
   },
   {
-    "objectID": "index.html#about-me",
-    "href": "index.html#about-me",
+    "objectID": "index.html#theoretical-nuclear-physics",
+    "href": "index.html#theoretical-nuclear-physics",
     "title": "Shin-ei Fujii",
     "section": "",
-    "text": "I am a postdoctoral researcher at Zhejiang University, working in theoretical nuclear physics.\nMy research focuses on understanding the properties of strongly interacting matter created in relativistic heavy-ion collisions."
+    "text": "I am a postdoctoral fellow at the Zhejiang Institute of Modern Physics, Department of Physics, Zhejiang University, China.\nPublications Presentations Career & Education"
   },
   {
     "objectID": "index.html#research-interests",
     "href": "index.html#research-interests",
     "title": "Shin-ei Fujii",
     "section": "Research Interests",
-    "text": "Research Interests\n\nRelativistic heavy-ion collisions\nRelativistic hydrodynamics\nCore-corona picture\nSpin polarization and vorticity\nQCD phase diagram"
+    "text": "Research Interests\n\nRelativistic heavy-ion collisions and the quark-gluon plasma\nRelativistic hydrodynamics and hydrodynamic fluctuations\nDynamical core-corona initialization\nSpin polarization and vorticity in low energy heavy-ion collisions"
   },
   {
-    "objectID": "index.html#recent-news",
-    "href": "index.html#recent-news",
+    "objectID": "index.html#contact",
+    "href": "index.html#contact",
     "title": "Shin-ei Fujii",
-    "section": "Recent News",
-    "text": "Recent News\nOctober 2026\nPersonal academic website under construction."
+    "section": "Contact",
+    "text": "Contact\nEmail: s-fujii-8c2_at_eagle.sophia.ac.jp\nPlease replace _at_ with @ when sending an email."
   },
   {
     "objectID": "index.html#links",
     "href": "index.html#links",
     "title": "Shin-ei Fujii",
     "section": "Links",
-    "text": "Links\n\nINSPIRE-HEP\nGoogle Scholar\narXiv"
+    "text": "Links\n\nINSPIRE-HEP\nGoogle Scholar\nORCID\nresearchmap\narXiv\nGitHub\nHomepage(Japanese)"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Career & Education",
+    "section": "",
+    "text": "Period\nPosition\nInstitution\n\n\n\n\nJul. 2026–present\nPostdoctoral Fellow\nZhejiang University, China\n\n\nApr. 2026–Jun. 2026\nPostdoctoral Fellow\nSophia University, Japan\n\n\nApr. 2023–Mar. 2026\nResearch Assistant\nSophia University, Japan\n\n\n\nCurrent affiliation: Zhejiang Institute of Modern Physics, Department of Physics, Zhejiang University, Hangzhou, China."
+  },
+  {
+    "objectID": "about.html#academic-positions",
+    "href": "about.html#academic-positions",
+    "title": "Career & Education",
+    "section": "",
+    "text": "Period\nPosition\nInstitution\n\n\n\n\nJul. 2026–present\nPostdoctoral Fellow\nZhejiang University, China\n\n\nApr. 2026–Jun. 2026\nPostdoctoral Fellow\nSophia University, Japan\n\n\nApr. 2023–Mar. 2026\nResearch Assistant\nSophia University, Japan\n\n\n\nCurrent affiliation: Zhejiang Institute of Modern Physics, Department of Physics, Zhejiang University, Hangzhou, China."
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "Career & Education",
+    "section": "Education",
+    "text": "Education\n\n\n\n\n\n\n\n\nPeriod\nDegree\nInstitution\n\n\n\n\nApr. 2023–Mar. 2026\nDoctor of Philosophy in Physics (Ph.D.)\nSophia University, Japan\n\n\nApr. 2021–Mar. 2023\nMaster of Science (M.Sc.)\nSophia University, Japan\n\n\nApr. 2017–Mar. 2021\nBachelor of Science (B.S.)\nSophia University, Japan\n\n\n\nSupervisor: Prof. Tetsufumi Hirano."
+  },
+  {
+    "objectID": "about.html#awards",
+    "href": "about.html#awards",
+    "title": "Career & Education",
+    "section": "Awards",
+    "text": "Awards\n\nStudent Presentation Award of the Physical Society of Japan, JPS Annual Meeting 2025, October 11, 2025.\nOutstanding Poster & Flash Talk Presentation Award, Quark Matter 2023, September 5, 2023.\nExemption from Repayment for Particularly Outstanding Performance, Japan Student Services Organization (JASSO), March 2023."
+  },
+  {
+    "objectID": "about.html#fellowships-scholarships",
+    "href": "about.html#fellowships-scholarships",
+    "title": "Career & Education",
+    "section": "Fellowships & Scholarships",
+    "text": "Fellowships & Scholarships\n\nJST SPRING selected student, June 2024–March 2026. Grant number: JPMJSP2169.\nSophia University Graduate School Scholarship for Fostering Researchers in Doctoral Program, April 2023–March 2026.\nJASSO Scholarship, April 2021–March 2026.\nSophia University Donors’ Scholarship, April 2021–March 2023."
+  },
+  {
+    "objectID": "about.html#academic-activities",
+    "href": "about.html#academic-activities",
+    "title": "Career & Education",
+    "section": "Academic Activities",
+    "text": "Academic Activities\n\nMember of the Physical Society of Japan (JPS).\nReferee for EPJ Web of Conferences."
+  },
+  {
+    "objectID": "index.html#theoretical-nuclear-physicist-phd-in-physics",
+    "href": "index.html#theoretical-nuclear-physicist-phd-in-physics",
+    "title": "Shin-ei Fujii",
+    "section": "",
+    "text": "I am a postdoctoral fellow at the Zhejiang Institute of Modern Physics, Department of Physics, Zhejiang University, China.\nPublications Presentations Career & Education"
+  },
+  {
+    "objectID": "index.html#theoretical-nuclear-physicistin-physics",
+    "href": "index.html#theoretical-nuclear-physicistin-physics",
+    "title": "Shin-ei Fujii",
+    "section": "",
+    "text": "I am a postdoctoral fellow at the Zhejiang Institute of Modern Physics, Department of Physics, Zhejiang University, China.\nPublications Presentations Career & Education"
   }
 ]

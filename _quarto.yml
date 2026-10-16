@@ -8,7 +8,12 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - href: publications.qmd
+        text: Publications
+      - href: presentations.qmd
+        text: Presentations
+      - href: about.qmd
+        text: Career & Education
 
 format:
   html:
@@ -17,6 +22,3 @@ format:
       - brand
     css: styles.css
     toc: true
-
-
-

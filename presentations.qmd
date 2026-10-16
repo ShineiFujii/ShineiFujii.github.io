@@ -1,0 +1,66 @@
+---
+title: "Presentations"
+---
+
+## Invited Talks
+
+1. **Rapidity scan of conserved charges in a dynamical soft–hard correlated approach**  
+   C3NT workshop: Jet–soft dynamical medium interaction in high-energy heavy-ion collisions. Wuhan, China. April 2, 2026.
+
+2. **Hydro and dynamical model**  
+   postQM 2025. Nagoya, Japan. May 1, 2025.
+
+3. **Rapidity scan in high-energy heavy-ion collisions**  
+   Go-Forward workshop 2025. Nagasaki, Japan. February 28, 2025.
+
+4. **Dynamics of causal hydrodynamic fluctuations in an expanding system**  
+   The 40th Heavy Ion Cafe. Hongo, The University of Tokyo, Japan. September 22, 2023.
+
+5. **Dynamics of causal hydrodynamic fluctuations in an expanding system**  
+   Quark Matter 2023 (flash talk). Houston, Texas, USA. September 9, 2023.
+
+
+## Contributed Talks
+
+1. **Longitudinal dynamics from core–corona picture in high-energy heavy-ion collisions**  
+   The Physical Society of Japan 2026 Spring Meeting. Online, Japan. March 23, 2026.
+
+2. **Description of equilibration in the forward rapidity region in high-energy heavy-ion collisions from core-corona picture**  
+   The Physical Society of Japan, 80th Annual Meeting. Hiroshima, Japan. September 18, 2025.
+
+3. **Rapidity scan in high-energy heavy-ion collisions**  
+   The Physical Society of Japan 2025 Spring Meeting. Online, Japan. March 18, 2025.
+
+4. **Rapidity scan with DCCI at LHC energy**  
+   ATHIC 2025. Berhampur, Odisha, India. January 15, 2025.
+
+5. **Causal hydrodynamic fluctuations in a one-dimensional expanding system**  
+   Hydrodynamics and related observables in heavy-ion collisions. Subatech/IMT-Atlantique, Nantes, France. October 29, 2024.
+
+6. **Effects of hydrodynamic fluctuations on 2-particle correlations in an expanding system**  
+   The Physical Society of Japan 2024 Spring Meeting. Online, Japan. March 19, 2024.
+
+7. **Dynamics of causal hydrodynamic fluctuations in an expanding system**  
+   J-PARC Hadron Workshop 2023. Online, Japan. March 27, 2023.
+
+8. **Dynamics of hydrodynamic fluctuations in an expanding system**  
+   The Physical Society of Japan 2023 Spring Meeting. Online, Japan. March 25, 2023.
+
+9. **Causal hydrodynamic fluctuations in (1+1)-dimensional expanding system**  
+   The Physical Society of Japan, 77th Annual Meeting. Online, Japan. March 15, 2022.
+
+
+## Poster Presentations
+
+1. **Rapidity scan with DCCI at LHC energy**  
+   Quark Matter 2025. Frankfurt, Hesse, Germany. April 8, 2025.
+
+2. **Effects of hydrodynamic fluctuations on 2-particle correlations in an expanding system**  
+   Tutorial workshop for physics of high energy heavy ion collisions. Toyonaka, Osaka University, Japan. August 6, 2024.
+
+3. **Dynamics of causal hydrodynamic fluctuations in an expanding system**  
+   Quark Matter 2023. Houston, Texas, USA. September 5, 2023.
+
+4. **Dynamics of causal hydrodynamic fluctuations in an expanding system**  
+   ATHIC 2023. Hiroshima, Japan. April 25, 2023.
+

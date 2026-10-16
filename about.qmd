@@ -1,5 +1,41 @@
 ---
-title: "About"
+title: "Career & Education"
 ---
 
-About this site
+## Academic Positions
+
+| Period | Position | Institution |
+|:--|:--|:--|
+| Jul. 2026–present | Postdoctoral Fellow | Zhejiang University, China |
+| Apr. 2026–Jun. 2026 | Postdoctoral Fellow | Sophia University, Japan |
+| Apr. 2023–Mar. 2026 | Research Assistant | Sophia University, Japan |
+
+Current affiliation: Zhejiang Institute of Modern Physics, Department of Physics, Zhejiang University, Hangzhou, China.
+
+## Education
+
+| Period | Degree | Institution |
+|:--|:--|:--|
+| Apr. 2023–Mar. 2026 | Doctor of Philosophy in Physics (Ph.D.) | Sophia University, Japan |
+| Apr. 2021–Mar. 2023 | Master of Science (M.Sc.) | Sophia University, Japan |
+| Apr. 2017–Mar. 2021 | Bachelor of Science (B.S.) | Sophia University, Japan |
+
+Supervisor: Prof. Tetsufumi Hirano.
+
+## Awards
+
+- **Student Presentation Award of the Physical Society of Japan**, JPS Annual Meeting 2025, October 11, 2025.
+- **Outstanding Poster & Flash Talk Presentation Award**, Quark Matter 2023, September 5, 2023.
+- **Exemption from Repayment for Particularly Outstanding Performance**, Japan Student Services Organization (JASSO), March 2023.
+
+## Fellowships & Scholarships
+
+- **JST SPRING selected student**, June 2024–March 2026. Grant number: JPMJSP2169.
+- **Sophia University Graduate School Scholarship for Fostering Researchers in Doctoral Program**, April 2023–March 2026.
+- **JASSO Scholarship**, April 2021–March 2026.
+- **Sophia University Donors’ Scholarship**, April 2021–March 2023.
+
+## Academic Activities
+
+- Member of the Physical Society of Japan (JPS).
+- Referee for *EPJ Web of Conferences*.

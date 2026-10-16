@@ -1,0 +1,14 @@
+---
+title: "Publications"
+---
+
+## Refereed Journal Articles
+
+1. **Shin-ei Fujii** and Tetsufumi Hirano. “Causal hydrodynamic fluctuations in a one-dimensional expanding system.” *Physical Review C* **109**, 024916 (2024). [DOI: 10.1103/PhysRevC.109.024916](https://doi.org/10.1103/PhysRevC.109.024916).
+
+## Conference Proceedings
+
+1. **Shin-ei Fujii**, Yasuki Tachibana, and Tetsufumi Hirano. “Rapidity scan with DCCI at LHC energy.” *Journal of Subatomic Particles and Cosmology* **5**, 100289 (2026). [DOI: 10.1016/j.jspc.2026.100289](https://doi.org/10.1016/j.jspc.2026.100289).
+2. **Shin-ei Fujii** and Tetsufumi Hirano. “Dynamics of causal hydrodynamic fluctuations in an expanding system.” *EPJ Web of Conferences* **296**, 02005 (2024). [DOI: 10.1051/epjconf/202429602005](https://doi.org/10.1051/epjconf/202429602005).
+
+For my publication profile, see [INSPIRE-HEP](https://inspirehep.net/authors/2712176).
