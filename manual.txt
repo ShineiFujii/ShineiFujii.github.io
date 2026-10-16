@@ -1,3 +1,94 @@
+【編集後の更新・公開手順とコマンドの意味（2026-10-16追記）】
+日常の更新はこの節を優先して参照する。以下のコマンドは一行ずつ実行する。
+途中でエラーや競合が出たら、後続コマンドを実行せず表示内容を確認する。
+
+0. 作業フォルダへ移動
+cd ~/ShineiFujii.github.io
+意味: ホームページのファイルがあるフォルダに移動する。
+以降のコマンドは、このフォルダで実行する。
+
+1. 編集したファイルを保存し、表示を確認
+quarto preview
+意味: .qmdから確認用ページを作り、ブラウザでプレビューする。
+保存すると表示が更新される。これはGitHubへの送信ではない。
+確認が終わったらターミナルでCtrl+Cを押して終了する。
+
+2. 公開用ファイルを生成
+quarto render
+意味: .qmd、設定、CSSなどから公開用のHTMLや関連ファイルを生成する。
+このサイトの出力先は_quarto.ymlで指定されたdocs/。
+生成に失敗した場合は、修正してから先へ進む。
+
+3. 変更されたファイルを確認
+git status
+意味: 変更・追加されたファイルと、コミット対象の準備状況を表示する。
+編集したソースとdocs/の生成結果など、意図した変更かを確認する。
+
+4. 変更を次のコミットの対象にする
+git add .
+意味: 現在のフォルダ以下の変更をステージ（コミット対象として準備）する。
+無視設定の対象を除く新規ファイル、変更、削除も対象になる。
+不要なファイルや認証情報が含まれていないか注意する。
+
+5. コミット対象の差分を確認
+git diff --cached
+意味: ステージ済みの変更内容を表示する。
+余計な変更があれば先へ進まず対象を見直す。
+差分表示画面から戻れない場合はqを押す。
+
+6. Mac内に変更履歴を保存
+git commit -m "Update website"
+意味: ステージ済みの変更を、説明文Update websiteとともに履歴へ保存する。
+この時点ではGitHubにはまだ送信していない。
+説明文は変更内容に合わせて書き換えてよい。
+nothing to commitはコミット対象がないという意味で、失敗とは限らない。
+
+7. GitHub側の最新変更を取り込む
+git pull --rebase origin main
+意味: 接続先originのmainを取得し、自分の未送信コミットをその後に重ねる。
+別のMacやCodexが追加した変更（manual.txtなど）を取り込める。
+Successfully rebased...またはAlready up to date.なら正常。
+未コミットの変更が残っている場合や競合が発生した場合は、そこで止める。
+競合を解決するまではpushしない。
+.qmd、_quarto.yml、CSS、画像などサイト生成に関係する変更を取り込んだ場合は、
+統合後の内容でquarto previewとquarto renderを再実行し、
+git statusで差分を確認する。差分があれば手順4〜6で追加コミットしてから送信する。
+manual.txtだけの変更であればサイトの再生成は不要。
+
+8. GitHubへ送信
+git push origin main
+意味: Mac内のmainのコミットをGitHubのmainに送信する。
+fetch firstやrejectedの場合は、別の変更が先に送信されている可能性がある。
+手順7で取り込み、必要な確認・再生成を行ってから再度pushする。
+履歴を上書きするforce pushは、この通常手順では使わない。
+
+9. 公開結果を確認
+https://github.com/ShineiFujii/ShineiFujii.github.io/actions
+でPagesのbuild/deploy結果を確認する。
+公開サイト: https://shineifujii.github.io/
+push成功とPages公開成功は別なので、サイトの表示も確認する。
+
+編集・保存後のコマンド一覧:
+cd ~/ShineiFujii.github.io
+quarto preview
+（確認後Ctrl+Cで終了。次の行はプレビュー終了後に実行）
+quarto render
+git status
+git add .
+git diff --cached
+git commit -m "Update website"
+git pull --rebase origin main
+git push origin main
+
+次回、編集を始める前にも同期しておく:
+cd ~/ShineiFujii.github.io
+git status
+git pull --rebase origin main
+未コミットの変更がある場合は、先に内容を確認して保存方法を決める。
+編集前と送信前に同期することで、複数のMacやCodexとの行き違いを減らせる。
+
+【以下、従来のマニュアル】
+
 【2026-10-16 リポジトリ照合・訂正】
 Desktopの原本を以下に保存し、この訂正を冒頭に追加した。
 原本には文章化に伴うコマンドの改行・引用符・ハイフンの崩れがある。
