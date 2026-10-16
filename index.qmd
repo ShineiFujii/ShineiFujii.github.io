@@ -4,7 +4,7 @@ toc: false
 ---
 
 ::: {.profile}
-![Shin-ei Fujii giving a presentation](picture/picture2.png){.profile-photo width=240 fig-alt="Shin-ei Fujii giving a presentation" fig-cap=false}
+<img src="picture/picture2.png" class="profile-photo" width="240" alt="Shin-ei Fujii">
 
 ::: {.profile-intro}
 ## Theoretical nuclear physicist<br>PhD in Physics {.unnumbered}

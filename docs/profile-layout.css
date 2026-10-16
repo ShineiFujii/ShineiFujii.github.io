@@ -1,0 +1,15 @@
+/* Keep the portrait and introduction together on wide screens. */
+.profile {
+  display: grid;
+  grid-template-columns: 240px minmax(0, 1fr);
+  gap: 2rem;
+  align-items: center;
+  margin: 1.5rem 0 2.5rem;
+}
+.profile > p { margin: 0; }
+.profile .profile-photo { display: block; width: 240px; max-width: 100%; height: auto; border-radius: 12px; }
+.profile .profile-intro { min-width: 0; margin: 0; }
+.profile .profile-intro h2 { margin-top: 0; border-bottom: 0; }
+@media (max-width: 650px) {
+  .profile { grid-template-columns: minmax(0, 1fr); gap: 1.25rem; }
+}
