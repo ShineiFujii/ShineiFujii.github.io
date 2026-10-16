@@ -1,0 +1,32 @@
+---
+title: "Shin-ei Fujii"
+---
+
+## About Me
+
+I am a postdoctoral researcher at Zhejiang University,
+working in theoretical nuclear physics.
+
+My research focuses on understanding the properties
+of strongly interacting matter created in
+relativistic heavy-ion collisions.
+
+## Research Interests
+
+- Relativistic heavy-ion collisions
+- Relativistic hydrodynamics
+- Core-corona picture
+- Spin polarization and vorticity
+- QCD phase diagram
+
+## Recent News
+
+**October 2026**
+
+Personal academic website under construction.
+
+## Links
+
+- [INSPIRE-HEP](https://inspirehep.net/)
+- [Google Scholar](https://scholar.google.com/)
+- [arXiv](https://arxiv.org/)
