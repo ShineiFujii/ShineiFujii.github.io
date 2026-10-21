@@ -4,7 +4,7 @@ toc: false
 ---
 
 ::: {.profile}
-<img src="picture/picture2.png" class="profile-photo" width="240" alt="Shin-ei Fujii">
+<img src="picture/picture3.png" class="profile-photo" width="240" alt="Shin-ei Fujii">
 
 ::: {.profile-intro}
 ## Theoretical nuclear physicist<br>PhD in Physics {.unnumbered}
