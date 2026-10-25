@@ -1,3 +1,13 @@
+
+
+quarto preview
+
+quarto render
+git add .
+git commit -m "Update website"
+git push origin main
+
+
 【編集後の更新・公開手順とコマンドの意味（2026-10-16追記）】
 日常の更新はこの節を優先して参照する。以下のコマンドは一行ずつ実行する。
 途中でエラーや競合が出たら、後続コマンドを実行せず表示内容を確認する。

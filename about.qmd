@@ -11,7 +11,7 @@ title: "Career & Education"
 | Apr. 2026–Jun. 2026 | Postdoctoral Fellow | Sophia University, Japan |
 | Apr. 2023–Mar. 2026 | Research Assistant | Sophia University, Japan |
 
-Current affiliation: Zhejiang Institute of Modern Physics, Department of Physics, Zhejiang University, Hangzhou, China.
+<!--Current affiliation: Zhejiang Institute of Modern Physics, Department of Physics, Zhejiang University, Hangzhou, China.-->
 
 ## Education
 
@@ -21,7 +21,8 @@ Current affiliation: Zhejiang Institute of Modern Physics, Department of Physics
 | Apr. 2021–Mar. 2023 | Master of Science (M.Sc.) | Sophia University, Japan |
 | Apr. 2017–Mar. 2021 | Bachelor of Science (B.S.) | Sophia University, Japan |
 
-Supervisor: Prof. Tetsufumi Hirano.
+Supervisor: Prof. Tetsufumi Hirano.\
+[PhD thesis](https://www.dropbox.com/scl/fi/0tc8hg5gm6wjwtxq1njze/PhDthesis_fujii.pdf?rlkey=pithlbpx7i720n3ajqk66ng42&dl=0)
 
 ## Awards
 
