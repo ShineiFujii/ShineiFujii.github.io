@@ -4,7 +4,7 @@ toc: false
 ---
 
 ::: {.profile}
-<img src="picture/picture3.png" class="profile-photo" width="240" alt="Shin-ei Fujii">
+<img src="picture/picture4.PNG" class="profile-photo" width="240" alt="Shin-ei Fujii">
 
 ::: {.profile-intro}
 ## Theoretical nuclear physicist<br>PhD in Physics {.unnumbered}
@@ -23,7 +23,7 @@ Department of Physics, Zhejiang University, China.
 - Relativistic heavy-ion collisions and the quark-gluon plasma
 - Relativistic hydrodynamics and hydrodynamic fluctuations
 - Dynamical core-corona initialization
-- Spin polarization and vorticity in low energy heavy-ion collisions
+- Spin polarization and vorticity in intermediate-energy heavy-ion collisions
 
 ## Links
 

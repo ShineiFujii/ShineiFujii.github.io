@@ -6,9 +6,18 @@ title: "Publications"
 
 1. **Shin-ei Fujii** and Tetsufumi Hirano. “Causal hydrodynamic fluctuations in a one-dimensional expanding system.” *Physical Review C* **109**, 024916 (2024). [DOI: 10.1103/PhysRevC.109.024916](https://doi.org/10.1103/PhysRevC.109.024916).
 
+
+## Preprints
+
+1. **Shin-ei Fujii** and  Koichi Hattori. "Plobing nuclear deformation through global $\Lambda$ polarization in U+U collisions at HIAF." [https://arxiv.org/abs/2611.00613](https://arxiv.org/abs/2611.00613).
+
+1. **Shin-ei Fujii**, Yasuki Tachibana, and Tetsufumi Hirano. "Rapidity-dependent charge dynamics in high-energy nuclear collisions from dynamical core-corona initialization." [https://arxiv.org/abs/2610.05042](https://arxiv.org/abs/2610.05042).
+
+
 ## Conference Proceedings
 
 1. **Shin-ei Fujii**, Yasuki Tachibana, and Tetsufumi Hirano. “Rapidity scan with DCCI at LHC energy.” *Journal of Subatomic Particles and Cosmology* **5**, 100289 (2026). [DOI: 10.1016/j.jspc.2026.100289](https://doi.org/10.1016/j.jspc.2026.100289).
-2. **Shin-ei Fujii** and Tetsufumi Hirano. “Dynamics of causal hydrodynamic fluctuations in an expanding system.” *EPJ Web of Conferences* **296**, 02005 (2024). [DOI: 10.1051/epjconf/202429602005](https://doi.org/10.1051/epjconf/202429602005).
+
+1. **Shin-ei Fujii** and Tetsufumi Hirano. “Dynamics of causal hydrodynamic fluctuations in an expanding system.” *EPJ Web of Conferences* **296**, 02005 (2024). [DOI: 10.1051/epjconf/202429602005](https://doi.org/10.1051/epjconf/202429602005).
 
 For my publication profile, see [INSPIRE-HEP](https://inspirehep.net/authors/2712176).
