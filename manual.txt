@@ -1,12 +1,19 @@
+[編集前]
+cd ~/ShineiFujii.github.io
+(git status)
+git pull --ff-only origin main
 
-
-quarto preview
-
+[編集後]
+(quarto preview)
 quarto render
+(git status)
 git add .
+(git diff --cached)
 git commit -m "Update website"
+(git pull --rebase origin main)
 git push origin main
 
+-------------------------------------------------
 
 【編集後の更新・公開手順とコマンドの意味（2026-10-16追記）】
 日常の更新はこの節を優先して参照する。以下のコマンドは一行ずつ実行する。
